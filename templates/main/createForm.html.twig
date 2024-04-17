@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formulaire{% endblock %}
+
+{% block body %}
+<body>
+
+<div class="container">
+    <div class="row">
+        <h3 class="mt-5 mt-5 text-center">Formulaire de Création </h3>
+        <div class='col-md-6 offset-md-3'> 
+             {{ form_start(form) }}
+             <div class="form-group">
+                {{ form_label(form.title)}}
+                 {{ form_widget(form.title, {'attr':{'class':'form-control'}})}}
+             </div>
+               <div class="form-group">
+                {{ form_label(form.content)}}
+                 {{ form_widget(form.content, {'attr':{'class':'form-control'}})}}
+             </div>
+             <div class="form-group">
+                <button class="btn btn-info mt-2 text-white">Soumettre</button>
+             </div>
+             {{ form_end(form) }}
+              
+        
+
+        </div>
+    
+    
+    
+    
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+{% endblock %}

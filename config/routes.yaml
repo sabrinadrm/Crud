@@ -3,3 +3,19 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+app_main:
+    path: /
+    controller: App\Controller\MainController::index
+
+app_create:
+    path: /create
+    controller: App\Controller\MainController::create
+
+app_update:
+    path: /update/{id}
+    controller: App\Controller\MainController::update
+
+app_delete:
+    path: /delete/{id}
+    controller: App\Controller\MainController::delete
